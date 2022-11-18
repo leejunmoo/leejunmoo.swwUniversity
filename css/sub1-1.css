@@ -13,7 +13,7 @@ h2 {
   font-weight: 700;
 }
 
-p {
+section > p {
   font-family: "Alegreya", "Nanum Gothic";
   font-size: 20px;
   font-weight: 500;
@@ -22,7 +22,6 @@ p {
 .wrap {
   margin: 0 auto;
   max-width: 1440px;
-  text-align: center;
 }
 
 .main-visual-sub1-1 {
@@ -82,6 +81,70 @@ p {
   flex: 3;
 }
 
+/* section 공통 간격 */
+section {
+  position: relative;
+}
+section h2 {
+  margin-bottom: 40px;
+}
+
+section p {
+  margin-bottom: 50px;
+  line-height: 2rem;
+}
+
+section {
+  text-align: center;
+}
+
+section .content3 .pctext,
+section .content1-text .pctext {
+  display: block;
+}
+
+section .content3 .mtext {
+  display: inline;
+}
+
+/* section content1 */
+section .content1-text {
+  margin: 100px 20px;
+}
+
+/* section content2 */
+section .content2 {
+  max-width: 1400px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 100px 20px;
+  background-color: #fff3f6;
+  border-radius: 0px 100px;
+}
+
+/* section content3 */
+section .content3 {
+  max-width: 1400px;
+  height: 785px;
+  background: linear-gradient(180deg, #fffefe 0%, rgba(0, 0, 0, 0) 100%),
+    url(../images/sub1-1/수상경력.jpg);
+  margin-bottom: 100px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section .content3-text {
+  margin-bottom: 161px;
+}
+
+/* section .content3 {
+  clear: both;
+}
+ */
+
 /* mobile-lnb */
 @media (max-width: 1024px) {
   .lnb {
@@ -121,11 +184,26 @@ p {
 }
 
 @media (max-width: 767px) {
+  span.pt {
+    display: inline;
+  }
+
+  span.mt {
+    display: block;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
   .lnb {
     max-width: 767px;
     width: 100%;
     /* background: #ccc; */
-    display: flex;
     height: 137px;
     padding: 10px;
   }
@@ -163,54 +241,37 @@ p {
   .main-visual-sub1-1 h1 {
     font-size: 26px;
   }
-}
 
-/* section 공통 간격 */
-section {
-  position: relative;
-}
-section h2 {
-  margin-bottom: 40px;
-}
+  section .content1-text p,
+  section .content2-text p,
+  section .content3-text p {
+    word-break: keep-all;
+  }
 
-section p {
-  margin-bottom: 50px;
-  line-height: 2rem;
-}
+  section .content3-text .pctext,
+  section .content1-text .pctext {
+    display: inline;
+  }
 
-/* section content1 */
-section .content1-text {
-  margin: 100px 20px;
-}
+  section .content3-text .mtext {
+    display: block;
+  }
 
-/* section content2 */
-section .content2 {
-  max-width: 1400px;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 100px 20px;
-  background-color: #fff3f6;
-  border-radius: 0px 100px;
-}
+  section .content1-text p {
+    margin-bottom: 25px;
+  }
 
-/* section content3 */
-section .content3 {
-  max-width: 1400px;
-  height: 785px;
-  background: linear-gradient(180deg, #fffefe 0%, rgba(0, 0, 0, 0) 100%),
-    url(../images/sub1-1/수상경력.jpg);
-  margin-bottom: 100px;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  section .content2 {
+    padding: 50px 20px;
+  }
 
-section .content3-text {
-  margin-bottom: 161px;
-}
+  section .content1-text h2,
+  section .content2-text h2,
+  section .content3-text h2 {
+    margin-bottom: 15px;
+  }
 
-section .content3 {
-  clear: both;
+  section .content2-text p:nth-child(2) {
+    margin-bottom: 100px;
+  }
 }

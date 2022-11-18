@@ -19,7 +19,8 @@ h3 {
   font-weight: 700;
 }
 
-p {
+section .full-time-pro-list p:not(.hover),
+section .aff-pro-list p:not(.hover) {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   color: #333;
@@ -121,9 +122,12 @@ section p {
   margin-bottom: 40px;
 }
 
-section .full-time-pro-list p,
-section .aff-pro-list p {
+section .full-time-pro-list p {
   margin-bottom: 50px;
+}
+
+section .aff-pro-list p {
+  margin-bottom: 100px;
 }
 
 section li {
