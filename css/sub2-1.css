@@ -139,7 +139,7 @@ section .aff-pro {
   clear: both;
 }
 
-/* mobile-lnb */
+/* 분기점_mobile-lnb */
 @media (max-width: 1024px) {
   .lnb {
     max-width: 1024px;

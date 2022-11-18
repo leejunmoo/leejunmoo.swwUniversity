@@ -1,78 +1,46 @@
 /* mobile_sub1-1.css */
-/* sub1-1.css */
-/* sub공통 */
 
-h1 {
-  font-family: "Alegreya", "Nanum Gothic";
-  font-size: 40px;
-  font-weight: 700;
+/* mobile-lnb */
+
+span.pt {
+  display: inline;
+}
+
+span.mt {
+  display: block;
 }
 
 h2 {
-  font-family: "Alegreya", "Nanum Gothic";
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 30px;
 }
 
 p {
-  font-family: "Alegreya", "Nanum Gothic";
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 16px;
 }
 
-.wrap {
-  margin: 0 auto;
-  width: 1440px;
-  text-align: center;
-}
-
-.main-visual-sub1-1 {
-  max-width: 375px;
-  height: 150px;
-}
-
-.main-visual-sub1-1 .sub-title {
-  background-image: url(../images/main-visual/학과소개-main-visual.jpg);
-  max-width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* sub 공통 LNB */
 .lnb {
-  max-width: 375px;
+  max-width: 767px;
   width: 100%;
   /* background: #ccc; */
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  display: flex;
-  height: 114px;
+  height: 137px;
   padding: 10px;
 }
 
 .lnb .lnb-title {
-  font-size: 26px;
-  font-weight: 700;
-  color: #d6d6d6;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  flex: 1;
+  display: none;
 }
 
 .lnb .lnb-list ul {
   display: flex;
-  margin-left: 60px;
+  justify-content: center;
   align-items: center;
   height: 100%;
+  flex-wrap: wrap;
+  margin-left: 0;
 }
 
 .lnb .lnb-list ul li {
-  padding: 30px;
+  padding: 20px 18px;
   font-size: 20px;
 }
 
@@ -84,50 +52,43 @@ p {
   flex: 3;
 }
 
-/* section 공통 간격 */
-section {
-  position: relative;
-}
-section h2 {
-  margin-bottom: 40px;
+.main-visual-sub1-1 .sub-title {
+  background-position: center center;
 }
 
-section p {
-  margin-bottom: 50px;
-  line-height: 2rem;
+.main-visual-sub1-1 h1 {
+  font-size: 26px;
+}
+/* text 줄내림?방식 */
+section .content1-text p,
+section .content2-text p,
+section .content3-text p {
+  word-break: keep-all;
 }
 
-/* section content1 */
-section .content1-text {
-  margin: 100px 20px;
+section .content3-text .pctext,
+section .content1-text .pctext {
+  display: inline;
 }
 
-/* section content2 */
+section .content3-text .mtext {
+  display: block;
+}
+
+section .content1-text p {
+  margin-bottom: 25px;
+}
+
 section .content2 {
-  width: 1400px;
-  margin-left: 20px;
-  padding: 100px 20px;
-  background-color: #fff3f6;
-  border-radius: 0px 100px;
+  padding: 50px 20px;
 }
 
-/* section content3 */
-section .content3 {
-  width: 1400px;
-  height: 476px;
-  background: linear-gradient(180deg, #fffefe 0%, rgba(0, 0, 0, 0) 100%),
-    url(../images/sub1-1/수상경력.jpg);
-  margin: 340px 20px 100px;
+section .content1-text h2,
+section .content2-text h2,
+section .content3-text h2 {
+  margin-bottom: 15px;
 }
 
-section .content3-text {
-  position: absolute;
-  width: 690px;
-  height: 274px;
-  left: 375px;
-  top: 1280px;
-}
-
-section .content3 {
-  clear: both;
+section .content2-text p:nth-child(2) {
+  margin-bottom: 100px;
 }
