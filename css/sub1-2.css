@@ -139,7 +139,7 @@ footer {
   margin: 0 20px;
 }
 #event #list-content {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   /* padding: 100px 150px; */
   padding-top: 100px;

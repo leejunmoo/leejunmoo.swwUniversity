@@ -1,7 +1,6 @@
 /* sub1-2.css */
 /* sub공통 */
 section .full-time-pro-box .full-time-pro-list img,
-section .full-time-pro-box .full-time-pro-list2 img,
 section .aff-pro-box .aff-pro-list img {
   object-fit: cover;
 }
@@ -101,7 +100,7 @@ section .aff-pro-box .aff-pro-list li {
   position: relative;
 }
 
-/* sub2-1 전임교수 section */
+/* sub2-1 section */
 section {
   max-width: 1440px;
   width: 100%;
@@ -112,9 +111,15 @@ section .full-time-pro-box {
   text-align: center;
 }
 
-section img {
+section .full-time-pro-box .full-time-pro-list img,
+section .aff-pro-box .aff-pro-list img {
   width: 350px;
   height: 400px;
+}
+
+section .full-time-pro,
+section .aff-pro {
+  margin-left: 20px;
 }
 
 section .full-time-pro h2,

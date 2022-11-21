@@ -50,6 +50,11 @@ section {
   margin: 0 21px;
 }
 
+section .full-time-pro,
+section .aff-pro {
+  margin: 0 20px;
+}
+
 section .full-time-pro-box .full-time-pro-list li,
 section .aff-pro-box .aff-pro-list li {
   margin-right: 0;
