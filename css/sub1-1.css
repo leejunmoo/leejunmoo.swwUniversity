@@ -31,7 +31,7 @@ section > p {
 }
 
 .main-visual-sub1-1 .sub-title {
-  background-image: url(../images/main-visual/학과소개-main-visual.jpg);
+  background-image: url(../images/sub1-1/main-visual.jpg);
   width: 100%;
   height: 100%;
   color: #fff;
@@ -110,30 +110,92 @@ section .content3 .mtext {
 /* section content1 */
 section .content1-text {
   margin: 100px 20px;
+  animation: opacity 2s ease-in;
 }
-
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* section content2 */
 section .content2 {
   max-width: 1400px;
   margin-left: 20px;
   margin-right: 20px;
-  padding: 100px 20px;
-  background-color: #fff3f6;
-  border-radius: 0px 100px;
+  /* padding: 100px 20px; */
+  /* background: #ccc; */
+  height: 570px;
+  /* background-color: #fff3f6;
+  border-radius: 0px 100px; */
 }
-
+section .content2 p {
+  margin: 0;
+}
+section .content2 .content2-text {
+  height: 100%;
+}
+section .content2 .content2-text1-1 {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+section .content2 .content2-text1-1.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  height: 100%;
+  background: #fff3f6;
+  border-radius: 0 100px 0 0;
+  z-index: -1;
+}
+section .content2 .content2-text1-2 {
+  height: 50%;
+  border-radius: 0 0 0 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+section .content2 .content2-text1-2.active::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  height: 100%;
+  background: #fff3f6;
+  border-radius: 0 0 0 100px;
+  z-index: -1;
+}
+@keyframes fadeIn {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
 /* section content3 */
 section .content3 {
   max-width: 1400px;
   height: 785px;
+  overflow: hidden;
   background: linear-gradient(180deg, #fffefe 0%, rgba(0, 0, 0, 0) 100%),
-    url(../images/sub1-1/수상경력.jpg);
+    url(../images/sub1-1/sub.jpg);
   margin-bottom: 100px;
   background-repeat: no-repeat;
   background-position: bottom;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background 1.5s;
 }
 
 section .content3-text {

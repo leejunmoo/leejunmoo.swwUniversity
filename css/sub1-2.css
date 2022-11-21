@@ -1,46 +1,18 @@
-/* sub1-2.css */
-/* sub공통 */
-
-h1 {
+body {
   font-family: "Alegreya", "Nanum Gothic";
-  font-size: 40px;
-  font-weight: 700;
-}
-
-h2 {
-  font-family: "Alegreya", "Nanum Gothic";
-  font-size: 30px;
-  font-weight: 700;
-}
-
-h3 {
-  font-family: "Alegreya", "Nanum Gothic";
-  font-size: 20px;
-  font-weight: 700;
-}
-
-p {
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
-  color: #333;
-}
-
-.main-visual-sub1-1 {
-  width: 1440px;
-  height: 250px;
-}
-
-.main-visual-sub1-1 .sub-title {
-  background-image: url(../images/main-visual/교수소개-main-visual.jpg);
-  width: 100%;
+  /* background: #ddd; */
   height: 100%;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-
-/* sub 공통 LNB */
+.wrap {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 150px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+}
+/* lnb */
 .lnb {
   max-width: 1440px;
   width: 100%;
@@ -63,7 +35,7 @@ p {
 
 .lnb .lnb-list ul {
   display: flex;
-  /* margin-left: 240px; */
+  margin-left: 60px;
   align-items: center;
   height: 100%;
 }
@@ -80,61 +52,120 @@ p {
 .lnb .lnb-list {
   flex: 3;
 }
-
-/* sub1-2 전임교수 section */
-section .assistant-list,
-section .full-time-pro-list {
+#sub-title {
+  width: 1440px;
+  height: 250px;
+  background-image: url(../images/sub1-2/sub1-3title.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-size: cover; */
+}
+#sub-title .container {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
   text-align: center;
 }
-
-section img {
-  width: 350px;
-  height: 400px;
+.container {
+  width: 1440px;
+  margin: 0 auto;
 }
-
-section h2 {
-  margin-top: 35px;
+.container #slide1 h1 {
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-weight: 900;
 }
-
-section h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+#slide1 {
+  margin: 100px 20px;
 }
-
-section p {
-  margin-top: 15px;
-  margin-bottom: 30px;
-}
-
-section .full-time-pro-list li {
-  float: left;
-  margin-right: 45px;
-}
-/* 전임교수 슬라이드쇼 css */
-.full-time-pro-list {
-  width: 1140px;
+/* 보여줄 구간의 높이와 넓이 설정 */
+#slideShow {
+  /*전체 컨테이너*/
+  width: 1300px;
+  height: 250px;
+  position: relative;
   margin: 50px auto;
   overflow: hidden;
 }
-
-/* 전임교수 icon 위치 및 css */
-section {
-  position: relative;
-}
-
-.full-time-pro-list .controller #prev {
+.slides {
+  /*이미지들이 담겨있는 슬라이드 컨테이너*/
   position: absolute;
-  left: -10%;
-  top: 20%;
-  cursor: pointer;
-  font-size: 60px;
+  left: 0;
+  top: 0;
+  width: 1800px; /* 슬라이드할 사진과 마진 총 넓이 */
+  transition: 0.5s ease-out; /*ease-out: 처음에는 느렸다가 점점 빨라짐*/
+} /* 첫 번째 슬라이드 가운데에 정렬하기위해 첫번째 슬라이드만 margin-left조정 */
+.slides li:first-child {
+  margin-left: 100px;
+} /* 슬라이드들 옆으로 정렬 */
+.slides li:not(:last-child) {
+  float: left;
+  margin-right: 100px;
 }
-
-.full-time-pro-list .controller #next {
-  /* outline: 1px solid blue; */
-  cursor: pointer;
-  font-size: 60px;
+.controller span {
   position: absolute;
-  right: -10%;
-  top: 20%;
+  background-color: transparent;
+  color: black;
+  text-align: center;
+  border-radius: 50%;
+  padding: 10px 20px;
+  top: 25%;
+  cursor: pointer;
+} /* 이전, 다음 화살표에 마우스 커서가 올라가 있을때 */
+/* .controller span:hover {
+    background-color: rgba(128, 128, 128, 0.11);
+  } */
+.prev {
+  left: 10px;
+} /* 이전 화살표에 마우스 커서가 올라가 있을때 이전 화살표가 살짝 왼쪽으로 이동하는 효과*/
+.prev:hover {
+  transform: translateX(-10px);
+}
+.next {
+  right: 10px;
+} /* 다음 화살표에 마우스 커서가 올라가 있을때 이전 화살표가 살짝 오른쪽으로 이동하는 효과*/
+.next:hover {
+  transform: translateX(10px);
+}
+.section1-3 {
+  background-color: #fff3f6;
+  padding-bottom: 100px;
+}
+#event {
+  margin-bottom: 100px;
+  margin: 0 20px;
+}
+#event #list-content {
+  width: 1440px;
+  margin: 0 auto;
+  /* padding: 100px 150px; */
+  padding-top: 100px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+#event h1 {
+  padding-top: 50px;
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-weight: 900;
+}
+#event #list-content .list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 120px;
+}
+#event #list-content .list li {
+  /*  outline: 1px solid red; */
+  width: calc((100% - 240px) / 3);
+}
+#event #list-content .imghover {
+  border-radius: 5%;
+}
+#event #list-content .imghover:hover {
+  transform: scale(1.5);
+  transition-duration: 1s;
+  box-shadow: 0px 0px 20px #000;
 }
