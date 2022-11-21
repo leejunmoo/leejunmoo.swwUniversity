@@ -1,4 +1,5 @@
 /* 사이트맵 토글 버튼, 스크롤 up 버튼, 스크롤 헤더 색상 변경 */
+
 $(function () {
   $(".header-main-list-open").on("click", function () {
     $(".sitemap").toggleClass("active");
@@ -27,11 +28,11 @@ $(function () {
     if (scrollT2 < 100) {
       $(".header-main-list-depth2-box").addClass("active");
       $(".header-main-list-depth2-list li a").addClass("active");
-      $("#headerlogo").attr("src", "./images/logo/logowhite-small.png");
+      $("#headerlogo").attr("src", "./images/logo/logomainwhite.png");
     } else {
       $(".header-main-list-depth2-box").removeClass("active");
       $(".header-main-list-depth2-list li a").removeClass("active");
-      $("#headerlogo").attr("src", "./images/logo/대학교로고.png");
+      $("#headerlogo").attr("src", "./images/logo/logomain.png");
     }
   });
 });
@@ -39,9 +40,9 @@ $(function () {
 /* main-visual background-img */
 $(function () {
   let bgImg = [
-    "../images/mainvisual/main-visual01.png",
-    "../images/mainvisual/main-visual02.png",
-    "../images/mainvisual/main-visual03.png",
+    "./images/mainvisual/mainvisual01.png",
+    "./images/mainvisual/mainvisual02.png",
+    "./images/mainvisual/mainvisual03.png",
   ];
   let bgImgNum = 0;
   setInterval(function () {
@@ -105,5 +106,31 @@ $(function () {
   });
 });
 
-/* 헤더 로고 변경 */
-$(function () {});
+/* slick */
+$(function () {
+  $(".center").slick({
+    centerMode: true,
+    centerPadding: "40px",
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: "40px",
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: "40px",
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+});
