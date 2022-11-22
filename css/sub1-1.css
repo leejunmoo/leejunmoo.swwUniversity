@@ -189,14 +189,13 @@ section .content3 {
   overflow: hidden;
   background: linear-gradient(180deg, #fffefe 0%, rgba(0, 0, 0, 0) 100%),
     url(../images/sub1-1/sub.jpg);
-  /* margin-bottom: 100px; */
+  margin-bottom: 100px;
   background-repeat: no-repeat;
   background-position: bottom;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: background 1.5s;
-  margin: 0 auto 100px;
 }
 
 section .content3-text {
