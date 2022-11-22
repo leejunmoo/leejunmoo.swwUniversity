@@ -9,8 +9,7 @@ $(function () {
   });
   $(window).scroll(function () {
     let scrollT = $(window).scrollTop();
-    //if (scrollT > 100) 에서 수정함
-    if (scrollT >= 100) {
+    if (scrollT > 100) {
       $(".header-main").addClass("active");
       $(".header-sub").addClass("active");
       $(".upbtn").addClass("active");

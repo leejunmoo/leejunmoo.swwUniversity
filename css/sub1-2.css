@@ -53,22 +53,22 @@ footer {
   flex: 3;
 }
 #sub-title {
-  width: 1440px;
+  width: 100vw;
   height: 250px;
   background-image: url(../images/sub1-2/sub1-3title.jpg);
   background-repeat: no-repeat;
   background-position: center center;
+  /* background-size: cover; */
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-size: cover; */
 }
 #sub-title .container {
   font-size: 40px;
   font-weight: 700;
   color: #fff;
   text-align: center;
-}
+} 
 .container {
   width: 1440px;
   margin: 0 auto;
@@ -139,7 +139,7 @@ footer {
   margin: 0 20px;
 }
 #event #list-content {
-  max-width: 1440px;
+  width: 1440px;
   margin: 0 auto;
   /* padding: 100px 150px; */
   padding-top: 100px;
