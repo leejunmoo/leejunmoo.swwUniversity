@@ -9,6 +9,13 @@
 ###### 피그마 시안 : https://www.figma.com/file/dCh9z2OjzaXRbmGMW9dsDK/%ED%8C%80%EB%B3%84?node-id=0%3A1&t=7vgifbHT1Wk21YjI-1
 
 # 제작 목표
+
+
+
+
+
+
+
 1. 메인페이지
  + 메인 비주얼 이미지를 5초간격으로 바뀌도록 하였음
  + 메인 비주얼 이미지를 잘 보여줄 수 있도록 GNB배경을 투명 처리
