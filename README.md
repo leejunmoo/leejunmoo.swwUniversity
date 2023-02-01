@@ -16,6 +16,11 @@
 #### 3. 사이트 맵 개선
    ✅기존 사이트에 다양한 메뉴구성으로 번잡해보이는 부분을 단순화를 통한 가독성 개선
    
+ 
+##### 📌개발환경 : 운영체제 윈도우10 chrome
+##### 📌사용 코드에디터 : vs code
+##### 📌개발언어: HTML, CSS, JavaScript 
+ 
 # 사이트 메인 페이지🖥
    ![image](https://user-images.githubusercontent.com/113665599/203459711-524f011e-c9f1-47b0-822c-e599459ce693.png)
 
