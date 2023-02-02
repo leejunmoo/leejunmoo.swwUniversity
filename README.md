@@ -7,7 +7,8 @@
 ### 충청여자대학교 실용음악과 홈페이지를 참고해 리디자인 하였음
 #### 오리지널 페이지 : https://www.swwupmd.com/
 ##### 리뉴얼 페이지 : https://leejunmoo.github.io/leejunmoo.swwUniversity/
-###### 피그마 시안 : https://www.figma.com/file/dCh9z2OjzaXRbmGMW9dsDK/%ED%8C%80%EB%B3%84?node-id=0%3A1&t=7vgifbHT1Wk21YjI-1
+###### 피그마 시안 : https://www.figma.com/file/dCh9z2OjzaXRbmGMW9dsDK/%ED%8C%80%EB%B3%84?node-id=0%3A1&t=7vgifbHT1Wk21YjI-1    
+###### 제작 기간 : 2022.11.14 ~ 2022.11.21
 
 # 제작 목표📋
 #### 1. 기존 홈페이지의 노후화<br>
